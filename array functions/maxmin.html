@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+        
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> MaxMin</title>
+    </head>
+    <body>
+        <script>
+         let t=  [2, 9, 17, 0, 6];
+         console.log(t);
+        function minmax(t) {
+            let min = t[0];
+            let max = t[0];
+          for( let i= 1; i<t.length; i++)  {
+            if (t[i] < min) {
+            min = t[i]; 
+        }
+            if (t[i] > max) {
+            max = t[i]; 
+            
+          }
+          
+        }
+        return{min, max};
+    }
+        let resultat = minmax(t);
+       
+        console.log("Minimum :", resultat.min); 
+        console.log("Maximum :", resultat.max); 
+      
+      </script>
+        
+    </body>
+    </html>
